@@ -41,14 +41,7 @@ function App() {
 
   return (
     <div>
-      <nav>
-        {/* plus de boutons en dur ! */}
-        <button>bulbasaur</button>
-        <button>charmander</button>
-        <button>squirtle</button>
-        <button>pikachu</button>
-        <button>mew</button>
-      </nav>
+      <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
       <PokemonCards pokemon={pokemon} />
     </div>
   );
