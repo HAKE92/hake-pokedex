@@ -7,12 +7,28 @@ const pokemonList = [
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
+  
+  {
+    name: "charmander",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+  },
+  {
+    name: "squirtle",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+  },
+  {
+    name: "pikachu",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+  },
   {
     name: "mew",
   },
-
-
 ];
+
+
 
 function App() {
   const [pokemonName, setPokemonName] = useState("bulbasaur");
@@ -25,10 +41,15 @@ function App() {
 
   return (
     <div>
+      <nav>
+        {/* plus de boutons en dur ! */}
+        <button>bulbasaur</button>
+        <button>charmander</button>
+        <button>squirtle</button>
+        <button>pikachu</button>
+        <button>mew</button>
+      </nav>
       <PokemonCards pokemon={pokemon} />
-      <button onClick={() => setPokemonName("bulbasaur")}>bulbasaur</button>
-      <button onClick={() => setPokemonName("mew")}>mew</button>
-
     </div>
   );
 
